@@ -17,14 +17,14 @@
             font-family: 'Source Serif Pro', serif;
         }
         p {
-	   
         color: black;
         }
         h2{
-            background-color:black;
+            background-color:white;
             color: white;
             font-family: 'Source Serif Pro', serif;
         }
+        
     </style>
     <title>Notícias</title>
 
@@ -58,17 +58,39 @@
                 
                 O elenco da trilogia conta com nomes como Maya Hawke, Kiana Madeira, Sadie Sink e Gillian Jacobs. A direção fica por conta de Leigh Janiak. 
              </p>
-
-             <h2 class="center" style="font-size: 20px;"> 
-                Confira o trailer abaixo:          
-                
+             <p class ="center" style="font-size: 20px;">Confira o trailer abaixo:</p>
+             <br>
+             <h2 class="center" style="font-size: 20px;">  
                 <div class="container mb-50">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/u6jfv-D-QjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-             </h2>
+                </h2>
            </div>
            </div>
 
+           <footer>
+           <h1 class="center">Comentários</h1> 
+
+    <div class="container mb-50">
+       <div>
+            <form>
+                <label for="nome">Nome:</label> <br>
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id="txtNome"></div>
+                <br>
+                <label for="email">E-mail:</label> <br>
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id="txtEmail"></div>
+
+                <br>
+                <label for="assunto">Assunto:</label> <br>
+                <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+                <div id="txtAssunto"></div>
+                <br> 
+                <br>
+                <button onclick="enviar()">Enviar</button>
+            </form>
+        </div>
+            </footer>
 
            <hr>
            <footer>
